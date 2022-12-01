@@ -1,0 +1,31 @@
+
+public class LA7 {
+    public static void main(String[] args) {
+
+        AdultPerson AP= new AdultPerson("Zephaniah Lumandas", "Domanpot, Asingan", "Male", 20, "09082676239");
+
+        SeniorPerson SR= new SeniorPerson("Lakay old", "DOmanpot", "Male", 20, "09082676239");
+
+        EmployedPerson EP= new EmployedPerson("Raul Arthuro", "Asingan", "Male", 24, "09082676239", "2022-2023", "IT Dept", "Head Teacher", "₱ 45,000", "9.5");
+
+        Toddler T= new Toddler("Gieslle Gurly", "Macalong, Asingan", "Female", 20, "09082676239", "2nd year College", "20211111");
+
+
+        AP.Info();
+        System.out.println();
+
+        SR.Info();
+        SR.CanUseSeniorCitizenDiscount();
+        System.out.println();
+
+
+        EP.Info();
+        EP.IsWorking();
+        System.out.println();
+
+        T.Info();
+        T.MakingAssign();
+
+
+    }
+}
